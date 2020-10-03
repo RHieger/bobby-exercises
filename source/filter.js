@@ -9,7 +9,9 @@ export function odds(array) {
  * well as pickled ingredients.
  */
 export function noPickles(ingredients) {
-
+  return ingredients.filter(ingredient => {
+    return ingredient.indexOf("pickl") === -1;
+  });
 }
 
 /**
