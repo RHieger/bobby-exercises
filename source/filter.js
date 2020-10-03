@@ -1,7 +1,7 @@
 /** Return all of the odd numbers in the array.
  */
 export function odds(array) {
-
+  return array.filter(element => element % 2 !== 0);
 }
 
 /**
